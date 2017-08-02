@@ -1,0 +1,3 @@
+"/": "home#index"
+"/tags": "tags#index"
+"/posts": "posts#index"
