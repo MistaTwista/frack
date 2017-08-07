@@ -1,4 +1,3 @@
-# Implement main controller logic
 class Controller
   attr_reader :name, :action
   attr_accessor :status, :headers, :body
@@ -26,5 +25,12 @@ class Controller
     self.headers = {}
     self.body = ['Internal error']
     self
+  end
+
+  private
+
+  def template
+    template_file = File.join(App.root, 'app', 'views', name, "#{action}.haml")
+    Haml::Engine.new File.read(template_file)
   end
 end

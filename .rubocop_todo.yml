@@ -15,8 +15,7 @@ Metrics/LineLength:
 # Offense count: 1
 Style/Documentation:
   Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
+    - '**/*'
 
 # Offense count: 6
 # Cop supports --auto-correct.
